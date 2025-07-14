@@ -6,7 +6,70 @@
 // Siga os comentários para implementar cada parte do desafio.
 //Teste larissa
 
+// Definindo a estrutura da carta
+struct Carta {
+    char codigo[4];           // Ex: A01, B02 (3 caracteres + '\0')
+    int populacao;
+    float area;
+    float pib;
+    int pontosTuristicos;
+};
+
 int main() {
+
+    struct Carta carta1, carta2;
+
+    // Cadastro da primeira carta
+    printf("Cadastro da primeira carta:\n");
+    printf("Codigo da carta (ex: A01): ");
+    scanf("%s", carta1.codigo);
+
+    printf("Populacao: ");
+    scanf("%d", &carta1.populacao);
+
+    printf("Area (em km²): ");
+    scanf("%f", &carta1.area);
+
+    printf("PIB (em bilhões): ");
+    scanf("%f", &carta1.pib);
+
+    printf("Número de pontos turísticos: ");
+    scanf("%d", &carta1.pontosTuristicos);
+
+    // Cadastro da segunda carta
+    printf("\nCadastro da segunda carta:\n");
+    printf("Codigo da carta (ex: B02): ");
+    scanf("%s", carta2.codigo);
+
+    printf("Populacao: ");
+    scanf("%d", &carta2.populacao);
+
+    printf("Area (em km²): ");
+    scanf("%f", &carta2.area);
+
+    printf("PIB (em bilhões): ");
+    scanf("%f", &carta2.pib);
+
+    printf("Número de pontos turísticos: ");
+    scanf("%d", &carta2.pontosTuristicos);
+
+    // Exibição dos dados da primeira carta
+    printf("\n--- Dados da Primeira Carta ---\n");
+    printf("Codigo: %s\n", carta1.codigo);
+    printf("Populacao: %d\n", carta1.populacao);
+    printf("Area: %.2f km²\n", carta1.area);
+    printf("PIB: %.2f bilhões\n", carta1.pib);
+    printf("Pontos Turísticos: %d\n", carta1.pontosTuristicos);
+
+    // Exibição dos dados da segunda carta
+    printf("\n--- Dados da Segunda Carta ---\n");
+    printf("Codigo: %s\n", carta2.codigo);
+    printf("Populacao: %d\n", carta2.populacao);
+    printf("Area: %.2f km²\n", carta2.area);
+    printf("PIB: %.2f bilhões\n", carta2.pib);
+    printf("Pontos Turísticos: %d\n", carta2.pontosTuristicos);
+
+
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     
