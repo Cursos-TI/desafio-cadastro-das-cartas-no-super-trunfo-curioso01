@@ -23,7 +23,7 @@ int main() {
 
     // Cadastro da primeira carta
     printf("Cadastro da primeira carta:\n");
-    printf("Codigo (ex: A01): ");
+    printf("Codigo: ");
     scanf("%s", carta1.codigo);
 
     printf("Populacao: ");
@@ -40,7 +40,7 @@ int main() {
 
     // Cadastro da segunda carta
     printf("\nCadastro da segunda carta:\n");
-    printf("Codigo (ex: B02): ");
+    printf("Codigo: ");
     scanf("%s", carta2.codigo);
 
     printf("Populacao: ");
@@ -59,7 +59,7 @@ int main() {
     carta1.densidade = carta1.populacao / carta1.area;
     carta1.pibPerCapita = carta1.pib / carta1.populacao;
 
-    carta1.superPoder = 
+       carta1.superPoder = 
         (float)carta1.populacao +
         carta1.area +
         carta1.pib +
@@ -107,7 +107,7 @@ int main() {
     printf("Super Poder: %.2f\n", carta2.superPoder);
 
     // Comparações
-    printf("\n--- Comparação de Cartas ---\n");
+    printf("\nComparação de Cartas:\n");
 
     int venceu;
 
@@ -131,7 +131,6 @@ int main() {
 
     venceu = (carta1.superPoder > carta2.superPoder);
     printf("Super Poder: Carta %d venceu (%d)\n", venceu ? 1 : 2, venceu);
-
 
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
