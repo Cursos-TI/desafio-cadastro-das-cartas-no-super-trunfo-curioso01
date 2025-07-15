@@ -9,10 +9,9 @@
 // Definindo a estrutura da carta
 struct Carta {
     char codigo[4];           // Ex: A01, B02 (3 caracteres + '\0')
-    int populacao;
-    float area;
-    float pib;
-    int pontosTuristicos;
+    int populacao, pontosTuristicos;
+    float area, pib, densidade, pibpercapito;
+    
 };
 
 int main() {
@@ -53,6 +52,16 @@ int main() {
     printf("Número de pontos turísticos: ");
     scanf("%d", &carta2.pontosTuristicos);
 
+    //Cálculo da Densidade da populacional das cartas 1 e 2.
+
+    carta1.densidade = (carta1.populacao / carta1.area);
+    carta2.densidade = (carta2.populacao / carta2.area);
+
+    //Cálculo do PIB per Capita das cartas 1 e 2.
+
+    carta1.pibpercapito = (carta1.populacao / carta1.pib);
+    carta2.pibpercapito = (carta2.populacao / carta2.pib);
+
     // Exibição dos dados da primeira carta
     printf("\n--- Dados da Primeira Carta ---\n");
     printf("Codigo: %s\n", carta1.codigo);
@@ -60,6 +69,8 @@ int main() {
     printf("Area: %.2f km²\n", carta1.area);
     printf("PIB: %.2f bilhões\n", carta1.pib);
     printf("Pontos Turísticos: %d\n", carta1.pontosTuristicos);
+    printf("Densidade Populacional: %.2f\n", carta1.densidade);
+    printf("PIB per Capita: %.2f\n", carta1.pibpercapito);
 
     // Exibição dos dados da segunda carta
     printf("\n--- Dados da Segunda Carta ---\n");
@@ -68,6 +79,8 @@ int main() {
     printf("Area: %.2f km²\n", carta2.area);
     printf("PIB: %.2f bilhões\n", carta2.pib);
     printf("Pontos Turísticos: %d\n", carta2.pontosTuristicos);
+    printf("Densidade Populacional: %.2f\n", carta2.densidade);
+    printf("PIB per Capita: %.2f\n\n", carta2.pibpercapito);
 
 
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
