@@ -54,13 +54,13 @@ int main() {
 
     //Cálculo da Densidade da populacional das cartas 1 e 2.
 
-    carta1.densidade = (carta1.populacao / carta1.area);
-    carta2.densidade = (carta2.populacao / carta2.area);
+    carta1.densidade = ((float)carta1.populacao / carta1.area);
+    carta2.densidade = ((float)carta2.populacao / carta2.area);
 
     //Cálculo do PIB per Capita das cartas 1 e 2.
 
-    carta1.pibpercapito = (carta1.populacao / carta1.pib);
-    carta2.pibpercapito = (carta2.populacao / carta2.pib);
+    carta1.pibpercapito = ((float)carta1.populacao / carta1.pib);
+    carta2.pibpercapito = ((float)carta2.populacao / carta2.pib);
 
     // Exibição dos dados da primeira carta
     printf("\n--- Dados da Primeira Carta ---\n");
