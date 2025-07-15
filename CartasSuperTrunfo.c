@@ -23,7 +23,7 @@ int main() {
 
     // Cadastro da primeira carta
     printf("Cadastro da primeira carta:\n");
-    printf("Codigo: ");
+    printf("Codigo (ex:A01): ");
     scanf("%s", carta1.codigo);
 
     printf("Populacao: ");
@@ -40,7 +40,7 @@ int main() {
 
     // Cadastro da segunda carta
     printf("\nCadastro da segunda carta:\n");
-    printf("Codigo: ");
+    printf("Codigo (ex:B02): ");
     scanf("%s", carta2.codigo);
 
     printf("Populacao: ");
