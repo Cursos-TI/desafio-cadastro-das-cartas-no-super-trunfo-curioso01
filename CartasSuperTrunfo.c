@@ -8,7 +8,7 @@
 
 // Estrutura da Carta
 struct Carta {
-    char codigo[4];
+    char codigo[4], nome[30];
     unsigned long int populacao;
     float area;
     float pib;
@@ -26,6 +26,9 @@ int main() {
     printf("Codigo (ex:A01): ");
     scanf("%s", carta1.codigo);
 
+    printf("Nome do país: ");
+    scanf("%s", carta1.nome);
+
     printf("Populacao: ");
     scanf("%lu", &carta1.populacao);
 
@@ -42,6 +45,9 @@ int main() {
     printf("\nCadastro da segunda carta:\n");
     printf("Codigo (ex:B02): ");
     scanf("%s", carta2.codigo);
+
+    printf("Nome do país: ");
+    scanf("%s", carta2.nome);
 
     printf("Populacao: ");
     scanf("%lu", &carta2.populacao);
@@ -111,33 +117,33 @@ int main() {
 
      if (carta1.populacao > carta2.populacao)
     {
-       printf("População %s venceu\n", carta1.codigo);
+       printf("População da Carta %s venceu\n", carta1.codigo);
     }   else {
-        printf("População %s venceu\n", carta2.codigo);
+        printf("População da Carta %s venceu\n", carta2.codigo);
     }
     if (carta1.area > carta2.area)
     {
-       printf("Area %s venceu\n", carta1.codigo);
+       printf("Area da Carta %s venceu\n", carta1.codigo);
     }   else {
-        printf("Area %s venceu\n", carta2.codigo);
+        printf("Area da Carta %s venceu\n", carta2.codigo);
     }
     if (carta1.pib > carta2.pib)
     {
-       printf("PIB %s venceu\n", carta1.codigo);
+       printf("PIB da Carta %s venceu\n", carta1.codigo);
     }   else {
-        printf("PIB %s venceu\n", carta2.codigo);
+        printf("PIB da Carta %s venceu\n", carta2.codigo);
     }
     if (carta1.pontosTuristicos > carta2.pontosTuristicos)
     {
-       printf("Pontos Turísticos %s venceu\n", carta1.codigo);
+       printf("Pontos Turísticos da Carta %s venceu\n", carta1.codigo);
     }   else {
-        printf("Pontos Turísticos %s venceu\n", carta2.codigo);
+        printf("Pontos Turísticos da Carta %s venceu\n", carta2.codigo);
     }
     if (carta1.superPoder > carta2.superPoder)
     {
-       printf("Super poder %s venceu\n", carta1.codigo);
+       printf("Super poder da Carta %s venceu\n", carta1.codigo);
     }   else {
-        printf("Super poder %s venceu\n", carta2.codigo);
+        printf("Super poder da Carta %s venceu\n", carta2.codigo);
     }
 
     /*
