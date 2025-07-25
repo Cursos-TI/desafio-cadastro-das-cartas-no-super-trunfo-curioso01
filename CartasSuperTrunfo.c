@@ -113,40 +113,8 @@ int main() {
     printf("Super Poder: %.2f\n", carta2.superPoder);
 
     // Comparações
-    printf("\nComparação de Cartas:\n");
-
-     if (carta1.populacao > carta2.populacao)
-    {
-       printf("População da Carta %s venceu\n", carta1.codigo);
-    }   else {
-        printf("População da Carta %s venceu\n", carta2.codigo);
-    }
-    if (carta1.area > carta2.area)
-    {
-       printf("Area da Carta %s venceu\n", carta1.codigo);
-    }   else {
-        printf("Area da Carta %s venceu\n", carta2.codigo);
-    }
-    if (carta1.pib > carta2.pib)
-    {
-       printf("PIB da Carta %s venceu\n", carta1.codigo);
-    }   else {
-        printf("PIB da Carta %s venceu\n", carta2.codigo);
-    }
-    if (carta1.pontosTuristicos > carta2.pontosTuristicos)
-    {
-       printf("Pontos Turísticos da Carta %s venceu\n", carta1.codigo);
-    }   else {
-        printf("Pontos Turísticos da Carta %s venceu\n", carta2.codigo);
-    }
-    if (carta1.superPoder > carta2.superPoder)
-    {
-       printf("Super poder da Carta %s venceu\n", carta1.codigo);
-    }   else {
-        printf("Super poder da Carta %s venceu\n", carta2.codigo);
-    }
-
-    /*
+    
+    
     int venceu;
 
     venceu = (carta1.populacao > carta2.populacao);
@@ -170,7 +138,7 @@ int main() {
     venceu = (carta1.superPoder > carta2.superPoder);
     printf("Super Poder: Carta %d venceu (%d)\n", venceu ? 1 : 2, venceu);
 
-    */
+
 
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
