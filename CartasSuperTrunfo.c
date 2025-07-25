@@ -109,6 +109,38 @@ int main() {
     // Comparações
     printf("\nComparação de Cartas:\n");
 
+     if (carta1.populacao > carta2.populacao)
+    {
+       printf("População %s venceu\n", carta1.codigo);
+    }   else {
+        printf("População %s venceu\n", carta2.codigo);
+    }
+    if (carta1.area > carta2.area)
+    {
+       printf("Area %s venceu\n", carta1.codigo);
+    }   else {
+        printf("Area %s venceu\n", carta2.codigo);
+    }
+    if (carta1.pib > carta2.pib)
+    {
+       printf("PIB %s venceu\n", carta1.codigo);
+    }   else {
+        printf("PIB %s venceu\n", carta2.codigo);
+    }
+    if (carta1.pontosTuristicos > carta2.pontosTuristicos)
+    {
+       printf("Pontos Turísticos %s venceu\n", carta1.codigo);
+    }   else {
+        printf("Pontos Turísticos %s venceu\n", carta2.codigo);
+    }
+    if (carta1.superPoder > carta2.superPoder)
+    {
+       printf("Super poder %s venceu\n", carta1.codigo);
+    }   else {
+        printf("Super poder %s venceu\n", carta2.codigo);
+    }
+
+    /*
     int venceu;
 
     venceu = (carta1.populacao > carta2.populacao);
@@ -132,6 +164,8 @@ int main() {
     venceu = (carta1.superPoder > carta2.superPoder);
     printf("Super Poder: Carta %d venceu (%d)\n", venceu ? 1 : 2, venceu);
 
+    */
+
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     
@@ -142,6 +176,7 @@ int main() {
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    
 
     return 0;
 }
